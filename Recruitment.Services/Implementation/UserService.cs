@@ -13,43 +13,105 @@ public class UserService : IUserService
     {
         _userStore = userStore;
     }
+
     public async Task<List<UserDto>>
     GetUsersAsync(
         int pageNumber,
         int pageSize,
         string? role)
     {
-        return await _userStore
-            .GetUsersAsync(
-                pageNumber,
-                pageSize,
-                role);
-    }
-    public async Task<User?> GetUserByGuidAsync(Guid userGuid)
-    {
-        return await _userStore.GetUserByGuidAsync(userGuid);
-    }
-
-    public async Task<bool> CreateUserAsync(CreateUserDto dto)
-    {
-        return await _userStore.CreateUserAsync(dto);
+        try
+        {
+            return await _userStore
+                .GetUsersAsync(
+                    pageNumber,
+                    pageSize,
+                    role);
+        }
+        catch (Exception)
+        {
+            throw;
+        }
     }
 
-    public async Task<bool> UpdateUserAsync(Guid userGuid, UpdateUserDto dto)
+    public async Task<User?>
+    GetUserByGuidAsync(
+        Guid userGuid)
     {
-        return await _userStore.UpdateUserAsync(userGuid, dto);
+        try
+        {
+            return await _userStore
+                .GetUserByGuidAsync(
+                    userGuid);
+        }
+        catch (Exception)
+        {
+            throw;
+        }
     }
 
-    public async Task<bool> DeleteUserAsync(Guid userGuid)
+    public async Task<bool>
+    CreateUserAsync(
+        CreateUserDto dto)
     {
-        return await _userStore.DeleteUserAsync(userGuid);
+        try
+        {
+            return await _userStore
+                .CreateUserAsync(dto);
+        }
+        catch (Exception)
+        {
+            throw;
+        }
     }
+
+    public async Task<bool>
+    UpdateUserAsync(
+        Guid userGuid,
+        UpdateUserDto dto)
+    {
+        try
+        {
+            return await _userStore
+                .UpdateUserAsync(
+                    userGuid,
+                    dto);
+        }
+        catch (Exception)
+        {
+            throw;
+        }
+    }
+
+    public async Task<bool>
+    DeleteUserAsync(
+        Guid userGuid)
+    {
+        try
+        {
+            return await _userStore
+                .DeleteUserAsync(
+                    userGuid);
+        }
+        catch (Exception)
+        {
+            throw;
+        }
+    }
+
     public async Task<bool>
     BulkInsertUsersAsync(
         List<BulkUserDto> users)
     {
-        return await _userStore
-            .BulkInsertUsersAsync(
-                users);
+        try
+        {
+            return await _userStore
+                .BulkInsertUsersAsync(
+                    users);
+        }
+        catch (Exception)
+        {
+            throw;
+        }
     }
 }

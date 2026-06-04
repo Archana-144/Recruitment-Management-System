@@ -27,55 +27,137 @@ public class UserStore : IUserStore
     /// Returns a collection of active users.
     /// </returns>
     public async Task<List<UserDto>>
-    GetUsersAsync(
-        int pageNumber,
-        int pageSize,
-        string? role)
+ GetUsersAsync(
+     int pageNumber,
+     int pageSize,
+     string? role)
     {
-        List<UserDto> users = new();
-
-        string connectionString =
-            _configuration.GetConnectionString(
-                "DefaultConnection");
-
-        using SqlConnection connection =
-            new SqlConnection(connectionString);
-
-        using SqlCommand command =
-            new SqlCommand(
-                "usp_GetUsers",
-                connection);
-
-        command.CommandType =
-            CommandType.StoredProcedure;
-
-        command.Parameters.AddWithValue(
-            "@PageNumber",
-            pageNumber);
-
-        command.Parameters.AddWithValue(
-            "@PageSize",
-            pageSize);
-        command.Parameters.AddWithValue(
-    "@Role",
-    string.IsNullOrEmpty(role)
-        ? DBNull.Value
-        : role);
-
-        await connection.OpenAsync();
-
-        using SqlDataReader reader =
-            await command.ExecuteReaderAsync();
-
-        while (await reader.ReadAsync())
+        try
         {
-            users.Add(
-                new UserDto
-                {
-                    TotalRecords =
-                        Convert.ToInt32(
-                            reader["total_records"]),
+            List<UserDto> users = new();
 
+            string connectionString =
+                _configuration.GetConnectionString(
+                    "DefaultConnection");
+
+            using SqlConnection connection =
+                new SqlConnection(connectionString);
+
+            using SqlCommand command =
+                new SqlCommand(
+                    "usp_GetUsers",
+                    connection);
+
+            command.CommandType =
+                CommandType.StoredProcedure;
+
+            command.Parameters.AddWithValue(
+                "@PageNumber",
+                pageNumber);
+
+            command.Parameters.AddWithValue(
+                "@PageSize",
+                pageSize);
+
+            command.Parameters.AddWithValue(
+                "@Role",
+                string.IsNullOrEmpty(role)
+                    ? DBNull.Value
+                    : role);
+
+            await connection.OpenAsync();
+
+            using SqlDataReader reader =
+                await command.ExecuteReaderAsync();
+
+            while (await reader.ReadAsync())
+            {
+                users.Add(
+                    new UserDto
+                    {
+                        TotalRecords =
+                            Convert.ToInt32(
+                                reader["total_records"]),
+
+                        UserGuid =
+                            Guid.Parse(
+                                reader["user_guid"]
+                                    .ToString()),
+
+                        FullName =
+                            reader["full_name"]
+                                .ToString(),
+
+                        Email =
+                            reader["email"]
+                                .ToString(),
+
+                        Phone =
+                            reader["phone"]
+                                .ToString(),
+
+                        Role =
+                            reader["role"]
+                                .ToString(),
+
+                        Username =
+                            reader["username"]
+                                .ToString(),
+
+                        IsActive =
+                            Convert.ToBoolean(
+                                reader["is_active"])
+                    });
+            }
+
+            return users;
+        }
+        catch (Exception)
+        {
+            throw;
+        }
+    }
+    /// <summary>
+    /// Retrieves a specific user based on UserGuid.
+    /// Executes the usp_GetUserByGuid stored procedure.
+    /// </summary>
+    /// <param name="userGuid">
+    /// Unique identifier of the user.
+    /// </param>
+    /// <returns>
+    /// Returns user details if found;
+    /// otherwise returns null.
+    /// </returns>
+    public async Task<User?> GetUserByGuidAsync(Guid userGuid)
+    {
+        try
+        {
+            string connectionString =
+                _configuration.GetConnectionString("DefaultConnection");
+
+            using SqlConnection connection =
+                new SqlConnection(connectionString);
+
+            using SqlCommand command =
+                new SqlCommand("usp_GetUserByGuid", connection);
+
+            command.CommandType = CommandType.StoredProcedure;
+
+            command.Parameters.AddWithValue(
+                "@UserGuid",
+                userGuid
+                    .ToString("N")
+                    .ToUpper());
+
+            await connection.OpenAsync();
+
+            using SqlDataReader reader =
+                await command.ExecuteReaderAsync();
+
+            if (await reader.ReadAsync())
+            {
+                return new User
+                {
                     UserGuid =
                         Guid.Parse(
                             reader["user_guid"]
@@ -104,60 +186,15 @@ public class UserStore : IUserStore
                     IsActive =
                         Convert.ToBoolean(
                             reader["is_active"])
-                });
+                };
+            }
+
+            return null;
         }
-
-        return users;
-    }
-    /// <summary>
-    /// Retrieves a specific user based on UserGuid.
-    /// Executes the usp_GetUserByGuid stored procedure.
-    /// </summary>
-    /// <param name="userGuid">
-    /// Unique identifier of the user.
-    /// </param>
-    /// <returns>
-    /// Returns user details if found;
-    /// otherwise returns null.
-    /// </returns>
-    public async Task<User?> GetUserByGuidAsync(Guid userGuid)
-    {
-        string connectionString =
-            _configuration.GetConnectionString("DefaultConnection");
-
-        using SqlConnection connection =
-            new SqlConnection(connectionString);
-
-        using SqlCommand command =
-            new SqlCommand("usp_GetUserByGuid", connection);
-
-        command.CommandType = CommandType.StoredProcedure;
-
-        command.Parameters.AddWithValue(
-    "@UserGuid",
-    userGuid
-        .ToString("N")
-        .ToUpper());
-        await connection.OpenAsync();
-
-        using SqlDataReader reader =
-            await command.ExecuteReaderAsync();
-
-        if (await reader.ReadAsync())
+        catch (Exception)
         {
-            return new User
-            {
-                UserGuid = Guid.Parse(reader["user_guid"].ToString()),
-                FullName = reader["full_name"].ToString(),
-                Email = reader["email"].ToString(),
-                Phone = reader["phone"].ToString(),
-                Role = reader["role"].ToString(),
-                Username = reader["username"].ToString(),
-                IsActive = Convert.ToBoolean(reader["is_active"])
-            };
+            throw;
         }
-
-        return null;
     }
 
 
@@ -176,38 +213,59 @@ public class UserStore : IUserStore
     /// </returns>
     public async Task<bool> CreateUserAsync(CreateUserDto dto)
     {
-        string connectionString =
-            _configuration.GetConnectionString("DefaultConnection");
+        try
+        {
+            string connectionString =
+                _configuration.GetConnectionString("DefaultConnection");
 
-        using SqlConnection connection =
-            new SqlConnection(connectionString);
+            using SqlConnection connection =
+                new SqlConnection(connectionString);
 
-        using SqlCommand command =
-            new SqlCommand("usp_InsertUser", connection);
+            using SqlCommand command =
+                new SqlCommand("usp_InsertUser", connection);
 
-        command.CommandType = CommandType.StoredProcedure;
+            command.CommandType =
+                CommandType.StoredProcedure;
 
-        command.Parameters.AddWithValue("@FullName", dto.FullName);
-        command.Parameters.AddWithValue("@Email", dto.Email);
-        command.Parameters.AddWithValue("@Phone", dto.Phone);
-        command.Parameters.AddWithValue("@Role", dto.Role);
-        command.Parameters.AddWithValue("@Username", dto.Username);
+            command.Parameters.AddWithValue(
+                "@FullName",
+                dto.FullName);
 
+            command.Parameters.AddWithValue(
+                "@Email",
+                dto.Email);
 
-        command.Parameters.AddWithValue(
-            "@PasswordHash",
-            BCrypt.Net.BCrypt.HashPassword(dto.Password));
+            command.Parameters.AddWithValue(
+                "@Phone",
+                dto.Phone);
 
-        command.Parameters.AddWithValue(
-            "@CreatedBy",
-            "System");
+            command.Parameters.AddWithValue(
+                "@Role",
+                dto.Role);
 
-        await connection.OpenAsync();
+            command.Parameters.AddWithValue(
+                "@Username",
+                dto.Username);
 
+            command.Parameters.AddWithValue(
+                "@PasswordHash",
+                BCrypt.Net.BCrypt.HashPassword(
+                    dto.Password));
+
+            command.Parameters.AddWithValue(
+                "@CreatedBy",
+                "System");
+
+            await connection.OpenAsync();
 
             await command.ExecuteNonQueryAsync();
 
-        return true;
+            return true;
+        }
+        catch (Exception)
+        {
+            throw;
+        }
     }
 
     /// <summary>
@@ -224,39 +282,65 @@ public class UserStore : IUserStore
     /// Returns true if update is successful;
     /// otherwise returns false.
     /// </returns>
+    /// 
     public async Task<bool> UpdateUserAsync(
-        Guid userGuid,
-        UpdateUserDto dto)
+     Guid userGuid,
+     UpdateUserDto dto)
     {
-        string connectionString =
-            _configuration.GetConnectionString("DefaultConnection");
+        try
+        {
+            string connectionString =
+                _configuration.GetConnectionString(
+                    "DefaultConnection");
 
-        using SqlConnection connection =
-            new SqlConnection(connectionString);
+            using SqlConnection connection =
+                new SqlConnection(connectionString);
 
-        using SqlCommand command =
-            new SqlCommand("usp_UpdateUser", connection);
+            using SqlCommand command =
+                new SqlCommand(
+                    "usp_UpdateUser",
+                    connection);
 
-        command.CommandType = CommandType.StoredProcedure;
+            command.CommandType =
+                CommandType.StoredProcedure;
 
-        command.Parameters.AddWithValue(
-    "@UserGuid",
-    userGuid
-        .ToString("N")
-        .ToUpper());
-        command.Parameters.AddWithValue("@FullName", dto.FullName);
-        command.Parameters.AddWithValue("@Email", dto.Email);
-        command.Parameters.AddWithValue("@Phone", dto.Phone);
-        command.Parameters.AddWithValue("@Role", dto.Role);
-        command.Parameters.AddWithValue("@UpdatedBy", "System");
+            command.Parameters.AddWithValue(
+                "@UserGuid",
+                userGuid
+                    .ToString("N")
+                    .ToUpper());
 
-        await connection.OpenAsync();
+            command.Parameters.AddWithValue(
+                "@FullName",
+                dto.FullName);
 
-        await command.ExecuteNonQueryAsync();
+            command.Parameters.AddWithValue(
+                "@Email",
+                dto.Email);
 
-        return true;
+            command.Parameters.AddWithValue(
+                "@Phone",
+                dto.Phone);
+
+            command.Parameters.AddWithValue(
+                "@Role",
+                dto.Role);
+
+            command.Parameters.AddWithValue(
+                "@UpdatedBy",
+                "System");
+
+            await connection.OpenAsync();
+
+            await command.ExecuteNonQueryAsync();
+
+            return true;
+        }
+        catch (Exception)
+        {
+            throw;
+        }
     }
-
     /// <summary>
     /// Soft deletes a user from the system.
     /// Executes the usp_DeleteUser stored procedure.
@@ -272,85 +356,122 @@ public class UserStore : IUserStore
     /// </returns>
     public async Task<bool> DeleteUserAsync(Guid userGuid)
     {
-        string connectionString =
-            _configuration.GetConnectionString("DefaultConnection");
+        try
+        {
+            string connectionString =
+                _configuration.GetConnectionString(
+                    "DefaultConnection");
 
-        using SqlConnection connection =
-            new SqlConnection(connectionString);
+            using SqlConnection connection =
+                new SqlConnection(connectionString);
 
-        using SqlCommand command =
-            new SqlCommand("usp_DeleteUser", connection);
+            using SqlCommand command =
+                new SqlCommand(
+                    "usp_DeleteUser",
+                    connection);
 
-        command.CommandType = CommandType.StoredProcedure;
-        command.Parameters.AddWithValue(
-    "@UserGuid",
-    userGuid
-        .ToString("N")
-        .ToUpper());
-        command.Parameters.AddWithValue("@UpdatedBy", "System");
+            command.CommandType =
+                CommandType.StoredProcedure;
 
-        await connection.OpenAsync();
+            command.Parameters.AddWithValue(
+                "@UserGuid",
+                userGuid
+                    .ToString("N")
+                    .ToUpper());
 
-        await command.ExecuteNonQueryAsync();
+            command.Parameters.AddWithValue(
+                "@UpdatedBy",
+                "System");
 
-        return true;
+            await connection.OpenAsync();
+
+            await command.ExecuteNonQueryAsync();
+
+            return true;
+        }
+        catch (Exception)
+        {
+            throw;
+        }
     }
+
+
+
+    /// <summary>
+    /// Performs bulk insertion of users into the database.
+    /// Executes the usp_BulkInsertUsers stored procedure
+    /// using a User Defined Table Type (UDT) for
+    /// optimized batch processing.
+    /// </summary>
+    /// <param name="users">
+    /// Collection of users to be inserted.
+    /// </param>
+    /// <returns>
+    /// Returns true if bulk insertion is successful;
+    /// otherwise throws an exception.
+    /// </returns>
     public async Task<bool>
     BulkInsertUsersAsync(
         List<BulkUserDto> users)
     {
-        DataTable table = new();
-
-        table.Columns.Add("FullName");
-        table.Columns.Add("Email");
-        table.Columns.Add("Phone");
-        table.Columns.Add("Role");
-        table.Columns.Add("Username");
-        table.Columns.Add("PasswordHash");
-        table.Columns.Add("CreatedBy");
-
-        foreach (var user in users)
+        try
         {
-            table.Rows.Add(
-                user.FullName,
-                user.Email,
-                user.Phone,
-                user.Role,
-                user.Username,
-                user.PasswordHash,
-                user.CreatedBy);
+            DataTable table = new();
+
+            table.Columns.Add("FullName");
+            table.Columns.Add("Email");
+            table.Columns.Add("Phone");
+            table.Columns.Add("Role");
+            table.Columns.Add("Username");
+            table.Columns.Add("PasswordHash");
+            table.Columns.Add("CreatedBy");
+
+            foreach (var user in users)
+            {
+                table.Rows.Add(
+                    user.FullName,
+                    user.Email,
+                    user.Phone,
+                    user.Role,
+                    user.Username,
+                    user.PasswordHash,
+                    user.CreatedBy);
+            }
+
+            string connectionString =
+                _configuration.GetConnectionString(
+                    "DefaultConnection");
+
+            using SqlConnection connection =
+                new(connectionString);
+
+            using SqlCommand command =
+                new("usp_BulkInsertUsers",
+                    connection);
+
+            command.CommandType =
+                CommandType.StoredProcedure;
+
+            SqlParameter parameter =
+                command.Parameters.AddWithValue(
+                    "@Users",
+                    table);
+
+            parameter.SqlDbType =
+                SqlDbType.Structured;
+
+            parameter.TypeName =
+                "UserBulkInsert_Type";
+
+            await connection.OpenAsync();
+
+            await command.ExecuteNonQueryAsync();
+
+            return true;
         }
-
-        string connectionString =
-            _configuration.GetConnectionString(
-                "DefaultConnection");
-
-        using SqlConnection connection =
-            new(connectionString);
-
-        using SqlCommand command =
-            new("usp_BulkInsertUsers",
-                connection);
-
-        command.CommandType =
-            CommandType.StoredProcedure;
-
-        SqlParameter parameter =
-            command.Parameters.AddWithValue(
-                "@Users",
-                table);
-
-        parameter.SqlDbType =
-            SqlDbType.Structured;
-
-        parameter.TypeName =
-            "UserBulkInsert_Type";
-
-        await connection.OpenAsync();
-
-        await command.ExecuteNonQueryAsync();
-
-        return true;
+        catch (Exception)
+        {
+            throw;
+        }
     }
-
 }

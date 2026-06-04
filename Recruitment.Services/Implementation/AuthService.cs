@@ -11,8 +11,6 @@ using Recruitment.Store.Abstraction;
 
 namespace Recruitment.Services.Implementation;
 
-
-
 /// <summary>
 /// Handles authentication logic.
 /// </summary>
@@ -43,73 +41,84 @@ public class AuthService : IAuthService
     public async Task<LoginResponseDto?> LoginAsync(
         LoginRequestDto dto)
     {
-        var user =
-            await _authStore.GetUserByUsernameAsync(
-                dto.Username);
-
-        if (user == null)
-            return null;
-        bool isValidPassword =
-    BCrypt.Net.BCrypt.Verify(
-        dto.Password,
-        user.PasswordHash);
-
-        if (!isValidPassword)
-            return null;
-
-        var tokenHandler =
-            new JwtSecurityTokenHandler();
-        var key =
-    Encoding.UTF8.GetBytes(
-        _configuration["Jwt:Key"]!);
-        var tokenDescriptor =
-     new SecurityTokenDescriptor
-     {
-         Subject = new ClaimsIdentity(
-
-[
-    new Claim(
-            "UserId",
-                user.UserId.ToString()),
-    new Claim(
-        ClaimTypes.Name,
-        user.Username),
-
-    new Claim(
-        ClaimTypes.Role,
-        user.Role),
-
-    new Claim(
-        "UserGuid",
-        user.UserGuid.ToString()),
-
-    new Claim(
-        "FullName",
-        user.FullName)
-]),
-
-         Issuer =
-             _configuration["Jwt:Issuer"],
-
-         Audience =
-             _configuration["Jwt:Audience"],
-
-         Expires =
-             DateTime.UtcNow.AddHours(2),
-
-         SigningCredentials =
-             new SigningCredentials(
-                 new SymmetricSecurityKey(key),
-                 SecurityAlgorithms.HmacSha256Signature)
-     };
-        var token =
-            tokenHandler.CreateToken(
-                tokenDescriptor);
-
-        return new LoginResponseDto
+        try
         {
-            Token =
-                tokenHandler.WriteToken(token)
-        };
+            var user =
+                await _authStore.GetUserByUsernameAsync(
+                    dto.Username);
+
+            if (user == null)
+                return null;
+
+            bool isValidPassword =
+                BCrypt.Net.BCrypt.Verify(
+                    dto.Password,
+                    user.PasswordHash);
+
+            if (!isValidPassword)
+                return null;
+
+            var tokenHandler =
+                new JwtSecurityTokenHandler();
+
+            var key =
+                Encoding.UTF8.GetBytes(
+                    _configuration["Jwt:Key"]!);
+
+            var tokenDescriptor =
+                new SecurityTokenDescriptor
+                {
+                    Subject = new ClaimsIdentity(
+                    [
+                        new Claim(
+                            "UserId",
+                            user.UserId.ToString()),
+
+                        new Claim(
+                            ClaimTypes.Name,
+                            user.Username),
+
+                        new Claim(
+                            ClaimTypes.Role,
+                            user.Role),
+
+                        new Claim(
+                            "UserGuid",
+                            user.UserGuid.ToString()),
+
+                        new Claim(
+                            "FullName",
+                            user.FullName)
+                    ]),
+
+                    Issuer =
+                        _configuration["Jwt:Issuer"],
+
+                    Audience =
+                        _configuration["Jwt:Audience"],
+
+                    Expires =
+                        DateTime.UtcNow.AddHours(2),
+
+                    SigningCredentials =
+                        new SigningCredentials(
+                            new SymmetricSecurityKey(key),
+                            SecurityAlgorithms.HmacSha256Signature)
+                };
+
+            var token =
+                tokenHandler.CreateToken(
+                    tokenDescriptor);
+
+            return new LoginResponseDto
+            {
+                Token =
+                    tokenHandler.WriteToken(token)
+            };
+        }
+        catch (Exception)
+        {
+            throw;
+        }
     }
 }

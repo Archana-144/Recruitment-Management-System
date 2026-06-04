@@ -26,7 +26,7 @@ public class InterviewController
     /// Retrieves all interviews.
     /// </summary>
     [Authorize(Roles = "Admin,HR,Interviewer")]
-    [HttpGet]
+    [HttpGet("GetInterviewsAsync")]
     public async Task<IActionResult>
         GetInterviews()
     {
@@ -41,7 +41,7 @@ public class InterviewController
     /// Retrieves interview by Guid.
     /// </summary>
     [Authorize(Roles = "Admin,HR,Interviewer")]
-    [HttpGet("{guid}")]
+    [HttpGet("GetInterviewByGuidAsync/{interviewGuid}")]
     public async Task<IActionResult>
         GetInterviewByGuid(
             Guid guid)
@@ -61,7 +61,7 @@ public class InterviewController
     /// Creates a new interview.
     /// </summary>
     [Authorize(Roles = "Admin,HR")]
-    [HttpPost]
+    [HttpPost("CreateInterviewAsync")]
     public async Task<IActionResult>
         CreateInterview(
             CreateInterviewDto dto)
@@ -87,7 +87,7 @@ public class InterviewController
     /// Updates interview.
     /// </summary>
     [Authorize(Roles = "Admin,HR,Interviewer")]
-    [HttpPut("{guid}")]
+    [HttpPut("UpdateInterviewAsync/{interviewGuid}")]
     public async Task<IActionResult>
         UpdateInterview(
             Guid guid,
@@ -110,7 +110,7 @@ public class InterviewController
     /// Deletes interview.
     /// </summary>
     [Authorize(Roles = "Admin")]
-    [HttpDelete("{guid}")]
+    [HttpDelete("DeleteInterviewAsync/{interviewGuid}")]
     public async Task<IActionResult>
         DeleteInterview(
             Guid guid)

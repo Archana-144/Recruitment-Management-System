@@ -8,9 +8,8 @@ public class JobService : IJobService
 {
     private readonly IJobStore _jobStore;
 
-
-public JobService(
-    IJobStore jobStore)
+    public JobService(
+        IJobStore jobStore)
     {
         _jobStore = jobStore;
     }
@@ -20,27 +19,48 @@ public JobService(
             int pageNumber,
             int pageSize)
     {
-        return await _jobStore
-            .GetJobPostingsAsync(
-                pageNumber,
-                pageSize);
+        try
+        {
+            return await _jobStore
+                .GetJobPostingsAsync(
+                    pageNumber,
+                    pageSize);
+        }
+        catch (Exception)
+        {
+            throw;
+        }
     }
 
     public async Task<JobPostingDto?>
         GetJobPostingByGuidAsync(
             Guid jobPostingGuid)
     {
-        return await _jobStore
-            .GetJobPostingByGuidAsync(
-                jobPostingGuid);
+        try
+        {
+            return await _jobStore
+                .GetJobPostingByGuidAsync(
+                    jobPostingGuid);
+        }
+        catch (Exception)
+        {
+            throw;
+        }
     }
 
     public async Task<bool>
         CreateJobPostingAsync(
             CreateJobPostingDto dto)
     {
-        return await _jobStore
-            .CreateJobPostingAsync(dto);
+        try
+        {
+            return await _jobStore
+                .CreateJobPostingAsync(dto);
+        }
+        catch (Exception)
+        {
+            throw;
+        }
     }
 
     public async Task<bool>
@@ -48,20 +68,32 @@ public JobService(
             Guid jobPostingGuid,
             UpdateJobPostingDto dto)
     {
-        return await _jobStore
-            .UpdateJobPostingAsync(
-                jobPostingGuid,
-                dto);
+        try
+        {
+            return await _jobStore
+                .UpdateJobPostingAsync(
+                    jobPostingGuid,
+                    dto);
+        }
+        catch (Exception)
+        {
+            throw;
+        }
     }
 
     public async Task<bool>
         DeleteJobPostingAsync(
             Guid jobPostingGuid)
     {
-        return await _jobStore
-            .DeleteJobPostingAsync(
-                jobPostingGuid);
+        try
+        {
+            return await _jobStore
+                .DeleteJobPostingAsync(
+                    jobPostingGuid);
+        }
+        catch (Exception)
+        {
+            throw;
+        }
     }
-
-
 }

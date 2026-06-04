@@ -24,8 +24,12 @@ public JobController(
     {
         _jobService = jobService;
     }
+
+    /// <summary>
+    /// Retrieves all active job postings.
+    /// </summary>
     [Authorize(Roles = "Admin,HR,Candidate")]
-    [HttpGet]
+    [HttpGet("GetJobsAsync")]
     public async Task<IActionResult>
     GetJobs(
         int pageNumber = 1,
@@ -39,8 +43,12 @@ public JobController(
 
         return Ok(jobs);
     }
+
+    /// <summary>
+    /// Retrieves a job posting by Guid.
+    /// </summary>
     [Authorize(Roles = "Admin,HR,Candidate")]
-    [HttpGet("{guid}")]
+    [HttpGet("GetJobByGuidAsync/{jobGuid}")]
     public async Task<IActionResult>
     GetJobByGuid(
         Guid guid)
@@ -56,8 +64,12 @@ public JobController(
         return Ok(job);
     }
 
+    /// <summary>
+    /// Creates a new job posting.
+    /// </summary>
+
     [Authorize(Roles = "Admin,HR")]
-    [HttpPost]
+    [HttpPost("CreateJobAsync")]
     public async Task<IActionResult>
     CreateJob(
         CreateJobPostingDto dto)
@@ -75,8 +87,12 @@ public JobController(
         return Ok(MessageConstants.JobCreated);
     }
 
+
+    /// <summary>
+    /// Updates an existing job posting.
+    /// </summary>
     [Authorize(Roles = "Admin,HR")]
-    [HttpPut("{guid}")]
+    [HttpPut("UpdateJobAsync/{jobGuid}")]
     public async Task<IActionResult>
     UpdateJob(
         Guid guid,
@@ -94,8 +110,12 @@ public JobController(
         return Ok(MessageConstants.JobUpdated);
     }
 
+
+    /// <summary>
+    /// Soft deletes a job posting.
+    /// </summary>
     [Authorize(Roles = "Admin")]
-    [HttpDelete("{guid}")]
+    [HttpDelete("DeleteJobAsync/{jobGuid}")]
     public async Task<IActionResult>
     DeleteJob(
         Guid guid)

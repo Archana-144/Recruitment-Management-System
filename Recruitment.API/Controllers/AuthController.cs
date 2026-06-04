@@ -22,7 +22,7 @@ public class AuthController : ControllerBase
     /// <summary>
     /// Authenticates user and returns JWT token.
     /// </summary>
-    [HttpPost("Login")]
+    [HttpPost("AuthenticateAsync")]
     public async Task<IActionResult> Login(
       LoginRequestDto dto)
     {

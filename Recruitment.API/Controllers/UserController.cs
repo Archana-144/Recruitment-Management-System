@@ -33,7 +33,7 @@ public UserController(
     /// Retrieves all active users.
     /// </summary>
     [Authorize(Roles = "Admin,HR")]
-    [HttpGet]
+    [HttpGet("GetUsersAsync")]
     public async Task<IActionResult>
     GetUsers(
     int pageNumber = 1,
@@ -52,7 +52,7 @@ public UserController(
     /// Retrieves a user based on UserGuid.
     /// </summary>
     [Authorize(Roles = "Admin,HR")]
-    [HttpGet("{guid}")]
+    [HttpGet("GetUserByGuidAsync/{userGuid}")]
     public async Task<IActionResult>
     GetUserByGuid(Guid guid)
     {
@@ -70,7 +70,7 @@ public UserController(
     /// Creates a new user.
     /// </summary>
     [Authorize(Roles = "Admin")]
-    [HttpPost]
+    [HttpPost("CreateUserAsync")]
     public async Task<IActionResult>
     CreateUser(CreateUserDto dto)
     {
@@ -92,7 +92,7 @@ public UserController(
     /// Updates an existing user.
     /// </summary>
     [Authorize(Roles = "Admin")]
-    [HttpPut("{guid}")]
+    [HttpPut("UpdateUserAsync/{userGuid}")]
     public async Task<IActionResult>
     UpdateUser(
         Guid guid,
@@ -118,7 +118,7 @@ public UserController(
     /// Soft deletes a user.
     /// </summary>
     [Authorize(Roles = "Admin")]
-    [HttpDelete("{guid}")]
+    [HttpDelete("DeleteUserAsync/{userGuid}")]
     public async Task<IActionResult>
     DeleteUser(Guid guid)
     {

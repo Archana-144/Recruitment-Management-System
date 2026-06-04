@@ -20,26 +20,47 @@ public class InterviewService
     public async Task<List<InterviewDto>>
         GetInterviewsAsync()
     {
-        return await _interviewStore
-            .GetInterviewsAsync();
+        try
+        {
+            return await _interviewStore
+                .GetInterviewsAsync();
+        }
+        catch (Exception)
+        {
+            throw;
+        }
     }
 
     public async Task<InterviewDetailDto?>
         GetInterviewByGuidAsync(
             Guid interviewGuid)
     {
-        return await _interviewStore
-            .GetInterviewByGuidAsync(
-                interviewGuid);
+        try
+        {
+            return await _interviewStore
+                .GetInterviewByGuidAsync(
+                    interviewGuid);
+        }
+        catch (Exception)
+        {
+            throw;
+        }
     }
 
     public async Task<bool>
         CreateInterviewAsync(
             CreateInterviewDto dto)
     {
-        return await _interviewStore
-            .CreateInterviewAsync(
-                dto);
+        try
+        {
+            return await _interviewStore
+                .CreateInterviewAsync(
+                    dto);
+        }
+        catch (Exception)
+        {
+            throw;
+        }
     }
 
     public async Task<bool>
@@ -47,18 +68,32 @@ public class InterviewService
             Guid interviewGuid,
             UpdateInterviewDto dto)
     {
-        return await _interviewStore
-            .UpdateInterviewAsync(
-                interviewGuid,
-                dto);
+        try
+        {
+            return await _interviewStore
+                .UpdateInterviewAsync(
+                    interviewGuid,
+                    dto);
+        }
+        catch (Exception)
+        {
+            throw;
+        }
     }
 
     public async Task<bool>
         DeleteInterviewAsync(
             Guid interviewGuid)
     {
-        return await _interviewStore
-            .DeleteInterviewAsync(
-                interviewGuid);
+        try
+        {
+            return await _interviewStore
+                .DeleteInterviewAsync(
+                    interviewGuid);
+        }
+        catch (Exception)
+        {
+            throw;
+        }
     }
 }

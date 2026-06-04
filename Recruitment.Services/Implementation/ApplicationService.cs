@@ -22,29 +22,51 @@ public class ApplicationService
             int pageNumber,
             int pageSize)
     {
-        return await _applicationStore
-            .GetApplicationsAsync(
-                pageNumber,
-                pageSize);
+        try
+        {
+            return await _applicationStore
+                .GetApplicationsAsync(
+                    pageNumber,
+                    pageSize);
+        }
+        catch (Exception)
+        {
+            throw;
+        }
     }
+
     public async Task<bool>
-    CreateApplicationAsync(
-        int candidateId,
-        CreateApplicationDto dto)
+        CreateApplicationAsync(
+            int candidateId,
+            CreateApplicationDto dto)
     {
-        return await _applicationStore
-            .CreateApplicationAsync(
-                candidateId,
-                dto);
+        try
+        {
+            return await _applicationStore
+                .CreateApplicationAsync(
+                    candidateId,
+                    dto);
+        }
+        catch (Exception)
+        {
+            throw;
+        }
     }
 
     public async Task<ApplicationDetailDto?>
         GetApplicationByGuidAsync(
             Guid applicationGuid)
     {
-        return await _applicationStore
-            .GetApplicationByGuidAsync(
-                applicationGuid);
+        try
+        {
+            return await _applicationStore
+                .GetApplicationByGuidAsync(
+                    applicationGuid);
+        }
+        catch (Exception)
+        {
+            throw;
+        }
     }
 
     public async Task<bool>
@@ -52,18 +74,32 @@ public class ApplicationService
             Guid applicationGuid,
             UpdateApplicationDto dto)
     {
-        return await _applicationStore
-            .UpdateApplicationAsync(
-                applicationGuid,
-                dto);
+        try
+        {
+            return await _applicationStore
+                .UpdateApplicationAsync(
+                    applicationGuid,
+                    dto);
+        }
+        catch (Exception)
+        {
+            throw;
+        }
     }
 
     public async Task<bool>
-    DeleteApplicationAsync(
-        Guid applicationGuid)
+        DeleteApplicationAsync(
+            Guid applicationGuid)
     {
-        return await _applicationStore
-            .DeleteApplicationAsync(
-                applicationGuid);
+        try
+        {
+            return await _applicationStore
+                .DeleteApplicationAsync(
+                    applicationGuid);
+        }
+        catch (Exception)
+        {
+            throw;
+        }
     }
 }

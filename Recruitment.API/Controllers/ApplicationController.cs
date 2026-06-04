@@ -24,7 +24,7 @@ public class ApplicationController : ControllerBase
     /// Retrieves all applications.
     /// </summary>
      [Authorize(Roles = "Admin,HR,Interviewer")]
-    [HttpGet]
+    [HttpGet("GetApplicationsAsync")]
     public async Task<IActionResult>
         GetApplications(
             int pageNumber = 1,
@@ -44,7 +44,7 @@ public class ApplicationController : ControllerBase
     /// </summary>
     /// 
     [Authorize(Roles = "Candidate")]
-    [HttpPost]
+    [HttpPost("CreateApplicationAsync")]
     public async Task<IActionResult>
      CreateApplication(
          CreateApplicationDto dto)
@@ -73,12 +73,12 @@ public class ApplicationController : ControllerBase
     /// <summary>
     /// Retrieves an application by Guid.
     /// </summary>
-     [Authorize(Roles = "Admin,HR,Interviewer")]
-    [HttpGet("{guid}")]
+    [Authorize(Roles = "Admin,HR,Interviewer")]
+    [HttpGet("GetApplicationByGuidAsync/{guid}")]
     public async Task<IActionResult>
-        GetApplicationByGuid(
-            Guid guid)
-    {
+ GetApplicationByGuid(
+     Guid guid)
+    { 
         var application =
             await _applicationService
                 .GetApplicationByGuidAsync(
@@ -93,12 +93,12 @@ public class ApplicationController : ControllerBase
     /// <summary>
     /// Updates application status.
     /// </summary>
-     [Authorize(Roles = "Admin,HR")]
-    [HttpPut("{guid}")]
+    [Authorize(Roles = "Admin,HR")]
+    [HttpPut("UpdateApplicationAsync/{guid}")]
     public async Task<IActionResult>
-        UpdateApplication(
-            Guid guid,
-            UpdateApplicationDto dto)
+UpdateApplication(
+    Guid guid,
+    UpdateApplicationDto dto)
     {
         bool result =
             await _applicationService
@@ -117,7 +117,7 @@ public class ApplicationController : ControllerBase
     /// Soft deletes an application.
     /// </summary>
     [Authorize(Roles = "Admin")]
-    [HttpDelete("{guid}")]
+    [HttpDelete("DeleteApplicationAsync/{Guid}")]
     public async Task<IActionResult>
         DeleteApplication(
             Guid guid)
