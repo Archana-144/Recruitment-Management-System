@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".gitignore" />
+  </Folder>
+  <Project Path="D:/Syssfore(backend)/Recruitment.API/Recruitment.API/Recruitment.API.csproj" />
+  <Project Path="D:/Syssfore(backend)/Recruitment.API/Recruitment.Common/Recruitment.Common.csproj" />
+  <Project Path="D:/Syssfore(backend)/Recruitment.API/Recruitment.Services/Recruitment.Services.csproj" />
+  <Project Path="D:/Syssfore(backend)/Recruitment.API/Recruitment.Store/Recruitment.Store.csproj" />
+</Solution>

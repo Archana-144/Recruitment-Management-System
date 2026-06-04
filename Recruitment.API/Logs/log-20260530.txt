@@ -1,0 +1,82 @@
+2026-05-30 21:48:50.594 +05:30 [INF] User profile is available. Using 'C:\Users\Archana Iyar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-30 21:48:50.855 +05:30 [INF] Now listening on: http://localhost:5289
+2026-05-30 21:48:50.858 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-30 21:48:50.858 +05:30 [INF] Hosting environment: Development
+2026-05-30 21:48:50.858 +05:30 [INF] Content root path: D:\Syssfore(backend)\Recruitment.API\Recruitment.API
+2026-05-30 21:50:13.131 +05:30 [INF] User profile is available. Using 'C:\Users\Archana Iyar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-30 21:50:13.257 +05:30 [INF] Now listening on: http://localhost:5289
+2026-05-30 21:50:13.258 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-30 21:50:13.259 +05:30 [INF] Hosting environment: Development
+2026-05-30 21:50:13.259 +05:30 [INF] Content root path: D:\Syssfore(backend)\Recruitment.API\Recruitment.API
+2026-05-30 21:50:47.698 +05:30 [INF] Application is shutting down...
+2026-05-30 21:50:55.655 +05:30 [INF] User profile is available. Using 'C:\Users\Archana Iyar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-30 21:50:55.743 +05:30 [INF] Now listening on: http://localhost:5289
+2026-05-30 21:50:55.744 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-30 21:50:55.745 +05:30 [INF] Hosting environment: Development
+2026-05-30 21:50:55.745 +05:30 [INF] Content root path: D:\Syssfore(backend)\Recruitment.API\Recruitment.API
+2026-05-30 21:55:30.384 +05:30 [INF] Application is shutting down...
+2026-05-30 21:56:22.334 +05:30 [INF] User profile is available. Using 'C:\Users\Archana Iyar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-30 21:56:22.530 +05:30 [INF] Now listening on: http://localhost:5289
+2026-05-30 21:56:22.531 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-30 21:56:22.532 +05:30 [INF] Hosting environment: Development
+2026-05-30 21:56:22.532 +05:30 [INF] Content root path: D:\Syssfore(backend)\Recruitment.API\Recruitment.API
+2026-05-30 21:57:19.448 +05:30 [INF] Application is shutting down...
+2026-05-30 22:02:32.809 +05:30 [INF] User profile is available. Using 'C:\Users\Archana Iyar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-30 22:02:32.891 +05:30 [INF] Now listening on: http://localhost:5289
+2026-05-30 22:02:32.892 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-30 22:02:32.892 +05:30 [INF] Hosting environment: Development
+2026-05-30 22:02:32.892 +05:30 [INF] Content root path: D:\Syssfore(backend)\Recruitment.API\Recruitment.API
+2026-05-30 22:02:41.414 +05:30 [INF] Application is shutting down...
+2026-05-30 22:09:00.244 +05:30 [INF] User profile is available. Using 'C:\Users\Archana Iyar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-30 22:09:00.331 +05:30 [INF] Now listening on: http://localhost:5289
+2026-05-30 22:09:00.333 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-30 22:09:00.333 +05:30 [INF] Hosting environment: Development
+2026-05-30 22:09:00.333 +05:30 [INF] Content root path: D:\Syssfore(backend)\Recruitment.API\Recruitment.API
+2026-05-30 22:09:49.475 +05:30 [INF] Application is shutting down...
+2026-05-30 22:22:34.495 +05:30 [INF] User profile is available. Using 'C:\Users\Archana Iyar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-30 22:22:34.699 +05:30 [INF] Now listening on: http://localhost:5289
+2026-05-30 22:22:34.701 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-30 22:22:34.701 +05:30 [INF] Hosting environment: Development
+2026-05-30 22:22:34.701 +05:30 [INF] Content root path: D:\Syssfore(backend)\Recruitment.API\Recruitment.API
+2026-05-30 22:23:09.475 +05:30 [INF] Application is shutting down...
+2026-05-30 22:23:21.001 +05:30 [INF] User profile is available. Using 'C:\Users\Archana Iyar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-30 22:23:21.135 +05:30 [INF] Now listening on: http://localhost:5289
+2026-05-30 22:23:21.136 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-30 22:23:21.137 +05:30 [INF] Hosting environment: Development
+2026-05-30 22:23:21.137 +05:30 [INF] Content root path: D:\Syssfore(backend)\Recruitment.API\Recruitment.API
+2026-05-30 22:23:41.775 +05:30 [INF] Application is shutting down...
+2026-05-30 22:24:04.775 +05:30 [INF] User profile is available. Using 'C:\Users\Archana Iyar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-30 22:24:04.894 +05:30 [INF] Now listening on: http://localhost:5289
+2026-05-30 22:24:04.896 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-30 22:24:04.896 +05:30 [INF] Hosting environment: Development
+2026-05-30 22:24:04.896 +05:30 [INF] Content root path: D:\Syssfore(backend)\Recruitment.API\Recruitment.API
+2026-05-30 22:24:30.855 +05:30 [INF] Application is shutting down...
+2026-05-30 22:44:59.083 +05:30 [INF] User profile is available. Using 'C:\Users\Archana Iyar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-30 22:44:59.180 +05:30 [INF] Now listening on: http://localhost:5289
+2026-05-30 22:44:59.182 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-30 22:44:59.182 +05:30 [INF] Hosting environment: Development
+2026-05-30 22:44:59.182 +05:30 [INF] Content root path: D:\Syssfore(backend)\Recruitment.API\Recruitment.API
+2026-05-30 22:45:54.661 +05:30 [INF] Application is shutting down...
+2026-05-30 22:48:18.642 +05:30 [INF] User profile is available. Using 'C:\Users\Archana Iyar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-30 22:48:18.725 +05:30 [INF] Now listening on: http://localhost:5289
+2026-05-30 22:48:18.726 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-30 22:48:18.726 +05:30 [INF] Hosting environment: Development
+2026-05-30 22:48:18.726 +05:30 [INF] Content root path: D:\Syssfore(backend)\Recruitment.API\Recruitment.API
+2026-05-30 22:48:25.602 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5289/swagger/index.html - null null
+2026-05-30 22:48:25.822 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5289/swagger/index.html - 200 null text/html;charset=utf-8 224.7306ms
+2026-05-30 22:48:25.924 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5289/swagger/v1/swagger.json - null null
+2026-05-30 22:48:26.036 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - Recruitment.API.Controllers.UserController.CreateUser (Recruitment.API). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-05-30 22:48:26.064 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5289/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 140.6501ms
+2026-05-30 22:48:47.486 +05:30 [INF] Application is shutting down...
+2026-05-30 22:48:50.315 +05:30 [INF] User profile is available. Using 'C:\Users\Archana Iyar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-30 22:48:50.441 +05:30 [INF] Now listening on: http://localhost:5289
+2026-05-30 22:48:50.443 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-30 22:48:50.444 +05:30 [INF] Hosting environment: Development
+2026-05-30 22:48:50.444 +05:30 [INF] Content root path: D:\Syssfore(backend)\Recruitment.API\Recruitment.API

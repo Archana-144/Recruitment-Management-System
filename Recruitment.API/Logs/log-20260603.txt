@@ -1,0 +1,379 @@
+2026-06-03 00:20:38.326 +05:30 [INF] User profile is available. Using 'C:\Users\Archana Iyar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-03 00:20:38.501 +05:30 [INF] Now listening on: http://localhost:5289
+2026-06-03 00:20:38.503 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-03 00:20:38.503 +05:30 [INF] Hosting environment: Development
+2026-06-03 00:20:38.503 +05:30 [INF] Content root path: D:\Syssfore(backend)\Recruitment.API\Recruitment.API
+2026-06-03 00:21:17.966 +05:30 [INF] Application is shutting down...
+2026-06-03 00:21:33.764 +05:30 [INF] User profile is available. Using 'C:\Users\Archana Iyar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-03 00:21:34.450 +05:30 [INF] Now listening on: https://localhost:7150
+2026-06-03 00:21:34.451 +05:30 [INF] Now listening on: http://localhost:5289
+2026-06-03 00:21:35.007 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-03 00:21:35.007 +05:30 [INF] Hosting environment: Development
+2026-06-03 00:21:35.007 +05:30 [INF] Content root path: D:\Syssfore(backend)\Recruitment.API\Recruitment.API
+2026-06-03 00:21:38.825 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7150/ - null null
+2026-06-03 00:21:44.189 +05:30 [INF] HTTP GET / responded 404 in 158.1837 ms
+2026-06-03 00:21:44.200 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7150/ - 404 null null 5389.6077ms
+2026-06-03 00:21:44.204 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7150/, Response status code: 404
+2026-06-03 00:23:26.115 +05:30 [INF] User profile is available. Using 'C:\Users\Archana Iyar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-03 00:23:26.390 +05:30 [INF] Now listening on: http://localhost:5289
+2026-06-03 00:23:26.392 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-03 00:23:26.392 +05:30 [INF] Hosting environment: Development
+2026-06-03 00:23:26.392 +05:30 [INF] Content root path: D:\Syssfore(backend)\Recruitment.API\Recruitment.API
+2026-06-03 00:25:52.901 +05:30 [INF] User profile is available. Using 'C:\Users\Archana Iyar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-03 00:25:53.018 +05:30 [INF] Now listening on: http://localhost:5289
+2026-06-03 00:25:53.022 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-03 00:25:53.022 +05:30 [INF] Hosting environment: Development
+2026-06-03 00:25:53.022 +05:30 [INF] Content root path: D:\Syssfore(backend)\Recruitment.API\Recruitment.API
+2026-06-03 00:26:18.724 +05:30 [INF] Application is shutting down...
+2026-06-03 00:26:31.870 +05:30 [INF] User profile is available. Using 'C:\Users\Archana Iyar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-03 00:26:31.976 +05:30 [INF] Now listening on: http://localhost:5289
+2026-06-03 00:26:31.978 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-03 00:26:31.979 +05:30 [INF] Hosting environment: Development
+2026-06-03 00:26:31.979 +05:30 [INF] Content root path: D:\Syssfore(backend)\Recruitment.API\Recruitment.API
+2026-06-03 00:26:52.288 +05:30 [INF] Application is shutting down...
+2026-06-03 00:27:31.268 +05:30 [INF] User profile is available. Using 'C:\Users\Archana Iyar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-03 00:27:31.395 +05:30 [INF] Now listening on: http://localhost:5289
+2026-06-03 00:27:31.397 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-03 00:27:31.397 +05:30 [INF] Hosting environment: Development
+2026-06-03 00:27:31.397 +05:30 [INF] Content root path: D:\Syssfore(backend)\Recruitment.API\Recruitment.API
+2026-06-03 00:29:43.102 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5289/swagger/index.html - null null
+2026-06-03 00:29:43.631 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 413.4753 ms
+2026-06-03 00:29:43.639 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5289/swagger/index.html - 200 null text/html;charset=utf-8 548.1025ms
+2026-06-03 00:29:43.855 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5289/swagger/v1/swagger.json - null null
+2026-06-03 00:29:44.300 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 445.0278 ms
+2026-06-03 00:29:44.301 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5289/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 447.4823ms
+2026-06-03 00:30:49.060 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5289/api/Interview - null null
+2026-06-03 00:30:49.097 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-06-03 00:30:53.134 +05:30 [INF] Executing endpoint 'Recruitment.API.Controllers.InterviewController.GetInterviews (Recruitment.API)'
+2026-06-03 00:30:53.243 +05:30 [INF] Route matched with {action = "GetInterviews", controller = "Interview"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetInterviews() on controller Recruitment.API.Controllers.InterviewController (Recruitment.API).
+2026-06-03 00:30:55.611 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Recruitment.Common.DTOs.InterviewDto, Recruitment.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-03 00:30:55.720 +05:30 [INF] Executed action Recruitment.API.Controllers.InterviewController.GetInterviews (Recruitment.API) in 2467.3473ms
+2026-06-03 00:30:55.721 +05:30 [INF] Executed endpoint 'Recruitment.API.Controllers.InterviewController.GetInterviews (Recruitment.API)'
+2026-06-03 00:30:55.727 +05:30 [INF] HTTP GET /api/Interview responded 200 in 6653.2977 ms
+2026-06-03 00:30:55.729 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5289/api/Interview - 200 null application/json; charset=utf-8 6670.0892ms
+2026-06-03 00:31:28.404 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5289/api/Interview/824cc2a4-4e56-429b-a3b9-ae761700a0dd - null null
+2026-06-03 00:31:28.411 +05:30 [INF] Executing endpoint 'Recruitment.API.Controllers.InterviewController.GetInterviewByGuid (Recruitment.API)'
+2026-06-03 00:31:28.446 +05:30 [INF] Route matched with {action = "GetInterviewByGuid", controller = "Interview"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetInterviewByGuid(System.Guid) on controller Recruitment.API.Controllers.InterviewController (Recruitment.API).
+2026-06-03 00:31:28.649 +05:30 [INF] Executing OkObjectResult, writing value of type 'Recruitment.Common.DTOs.InterviewDetailDto'.
+2026-06-03 00:31:28.657 +05:30 [INF] Executed action Recruitment.API.Controllers.InterviewController.GetInterviewByGuid (Recruitment.API) in 211.2406ms
+2026-06-03 00:31:28.657 +05:30 [INF] Executed endpoint 'Recruitment.API.Controllers.InterviewController.GetInterviewByGuid (Recruitment.API)'
+2026-06-03 00:31:28.658 +05:30 [INF] HTTP GET /api/Interview/824cc2a4-4e56-429b-a3b9-ae761700a0dd responded 200 in 251.9040 ms
+2026-06-03 00:31:28.658 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5289/api/Interview/824cc2a4-4e56-429b-a3b9-ae761700a0dd - 200 null application/json; charset=utf-8 254.0673ms
+2026-06-03 00:31:54.311 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5289/api/Interview - application/json 154
+2026-06-03 00:31:54.322 +05:30 [INF] Executing endpoint 'Recruitment.API.Controllers.InterviewController.CreateInterview (Recruitment.API)'
+2026-06-03 00:31:54.338 +05:30 [INF] Route matched with {action = "CreateInterview", controller = "Interview"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateInterview(CreateInterviewDto) on controller Recruitment.API.Controllers.InterviewController (Recruitment.API).
+2026-06-03 00:31:54.477 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2026-06-03 00:31:54.477 +05:30 [INF] Executed action Recruitment.API.Controllers.InterviewController.CreateInterview (Recruitment.API) in 137.7385ms
+2026-06-03 00:31:54.477 +05:30 [INF] Executed endpoint 'Recruitment.API.Controllers.InterviewController.CreateInterview (Recruitment.API)'
+2026-06-03 00:31:54.477 +05:30 [INF] HTTP POST /api/Interview responded 200 in 164.3315 ms
+2026-06-03 00:31:54.478 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5289/api/Interview - 200 null text/plain; charset=utf-8 166.3889ms
+2026-06-03 00:39:26.076 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5289/swagger/index.html - null null
+2026-06-03 00:39:26.157 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 51.9351 ms
+2026-06-03 00:39:26.160 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5289/swagger/index.html - 200 null text/html;charset=utf-8 91.6911ms
+2026-06-03 00:39:26.336 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5289/swagger/v1/swagger.json - null null
+2026-06-03 00:39:26.554 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 215.0241 ms
+2026-06-03 00:39:26.557 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5289/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 220.521ms
+2026-06-03 00:39:37.193 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5289/swagger/index.html - null null
+2026-06-03 00:39:37.193 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 0.2523 ms
+2026-06-03 00:39:37.194 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5289/swagger/index.html - 200 null text/html;charset=utf-8 0.4844ms
+2026-06-03 00:39:37.255 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5289/swagger/v1/swagger.json - null null
+2026-06-03 00:39:37.308 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 53.1482 ms
+2026-06-03 00:39:37.309 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5289/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 53.512ms
+2026-06-03 00:39:47.626 +05:30 [INF] Application is shutting down...
+2026-06-03 00:40:10.757 +05:30 [INF] User profile is available. Using 'C:\Users\Archana Iyar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-03 00:40:10.989 +05:30 [INF] Now listening on: http://localhost:5289
+2026-06-03 00:40:10.991 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-03 00:40:10.991 +05:30 [INF] Hosting environment: Development
+2026-06-03 00:40:10.991 +05:30 [INF] Content root path: D:\Syssfore(backend)\Recruitment.API\Recruitment.API
+2026-06-03 00:42:58.367 +05:30 [INF] User profile is available. Using 'C:\Users\Archana Iyar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-03 00:42:58.573 +05:30 [INF] Now listening on: http://localhost:5289
+2026-06-03 00:42:58.575 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-03 00:42:58.575 +05:30 [INF] Hosting environment: Development
+2026-06-03 00:42:58.576 +05:30 [INF] Content root path: D:\Syssfore(backend)\Recruitment.API\Recruitment.API
+2026-06-03 00:43:04.052 +05:30 [INF] Application is shutting down...
+2026-06-03 00:43:19.183 +05:30 [INF] User profile is available. Using 'C:\Users\Archana Iyar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-03 00:43:19.389 +05:30 [INF] Now listening on: http://localhost:5289
+2026-06-03 00:43:19.392 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-03 00:43:19.392 +05:30 [INF] Hosting environment: Development
+2026-06-03 00:43:19.392 +05:30 [INF] Content root path: D:\Syssfore(backend)\Recruitment.API\Recruitment.API
+2026-06-03 00:43:27.649 +05:30 [INF] Application is shutting down...
+2026-06-03 00:45:34.071 +05:30 [INF] User profile is available. Using 'C:\Users\Archana Iyar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-03 00:45:34.177 +05:30 [INF] Now listening on: http://localhost:5289
+2026-06-03 00:45:34.178 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-03 00:45:34.178 +05:30 [INF] Hosting environment: Development
+2026-06-03 00:45:34.178 +05:30 [INF] Content root path: D:\Syssfore(backend)\Recruitment.API\Recruitment.API
+2026-06-03 00:46:46.222 +05:30 [INF] Application is shutting down...
+2026-06-03 00:51:29.247 +05:30 [INF] User profile is available. Using 'C:\Users\Archana Iyar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-03 00:51:29.353 +05:30 [INF] Now listening on: http://localhost:5289
+2026-06-03 00:51:29.354 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-03 00:51:29.355 +05:30 [INF] Hosting environment: Development
+2026-06-03 00:51:29.355 +05:30 [INF] Content root path: D:\Syssfore(backend)\Recruitment.API\Recruitment.API
+2026-06-03 00:52:08.715 +05:30 [INF] Application is shutting down...
+2026-06-03 00:52:54.613 +05:30 [INF] User profile is available. Using 'C:\Users\Archana Iyar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-03 00:52:54.724 +05:30 [INF] Now listening on: http://localhost:5289
+2026-06-03 00:52:54.726 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-03 00:52:54.727 +05:30 [INF] Hosting environment: Development
+2026-06-03 00:52:54.727 +05:30 [INF] Content root path: D:\Syssfore(backend)\Recruitment.API\Recruitment.API
+2026-06-03 00:52:58.562 +05:30 [INF] Application is shutting down...
+2026-06-03 00:53:19.410 +05:30 [INF] User profile is available. Using 'C:\Users\Archana Iyar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-03 00:53:19.492 +05:30 [INF] Now listening on: http://localhost:5289
+2026-06-03 00:53:19.494 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-03 00:53:19.494 +05:30 [INF] Hosting environment: Development
+2026-06-03 00:53:19.494 +05:30 [INF] Content root path: D:\Syssfore(backend)\Recruitment.API\Recruitment.API
+2026-06-03 00:54:13.708 +05:30 [INF] Application is shutting down...
+2026-06-03 00:55:34.295 +05:30 [INF] User profile is available. Using 'C:\Users\Archana Iyar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-03 00:55:34.389 +05:30 [INF] Now listening on: http://localhost:5289
+2026-06-03 00:55:34.390 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-03 00:55:34.390 +05:30 [INF] Hosting environment: Development
+2026-06-03 00:55:34.390 +05:30 [INF] Content root path: D:\Syssfore(backend)\Recruitment.API\Recruitment.API
+2026-06-03 00:55:52.971 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5289/swagger/index.html - null null
+2026-06-03 00:55:53.259 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 215.0852 ms
+2026-06-03 00:55:53.265 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5289/swagger/index.html - 200 null text/html;charset=utf-8 298.0306ms
+2026-06-03 00:55:53.357 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5289/swagger/v1/swagger.json - null null
+2026-06-03 00:55:53.636 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 278.2749 ms
+2026-06-03 00:55:53.636 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5289/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 279.7377ms
+2026-06-03 00:56:44.573 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5289/api/User/bulk-upload - application/json 418
+2026-06-03 00:56:44.586 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-06-03 00:56:44.674 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-06-03 00:56:44.684 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-06-03 00:56:44.684 +05:30 [INF] HTTP POST /api/User/bulk-upload responded 401 in 102.9029 ms
+2026-06-03 00:56:44.684 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5289/api/User/bulk-upload - 401 0 null 111.1711ms
+2026-06-03 00:57:36.462 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5289/api/Auth/Login - application/json 52
+2026-06-03 00:57:36.479 +05:30 [INF] Executing endpoint 'Recruitment.API.Controllers.AuthController.Login (Recruitment.API)'
+2026-06-03 00:57:36.526 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Recruitment.Common.DTOs.LoginRequestDto) on controller Recruitment.API.Controllers.AuthController (Recruitment.API).
+2026-06-03 00:57:38.374 +05:30 [INF] Executing OkObjectResult, writing value of type 'Recruitment.Common.DTOs.LoginResponseDto'.
+2026-06-03 00:57:38.384 +05:30 [INF] Executed action Recruitment.API.Controllers.AuthController.Login (Recruitment.API) in 1852.562ms
+2026-06-03 00:57:38.384 +05:30 [INF] Executed endpoint 'Recruitment.API.Controllers.AuthController.Login (Recruitment.API)'
+2026-06-03 00:57:38.387 +05:30 [INF] HTTP POST /api/Auth/Login responded 200 in 1923.4577 ms
+2026-06-03 00:57:38.387 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5289/api/Auth/Login - 200 null application/json; charset=utf-8 1925.3831ms
+2026-06-03 00:57:57.218 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5289/api/User/bulk-upload - application/json 418
+2026-06-03 00:57:57.248 +05:30 [INF] Failed to validate the token.
+System.ArgumentException: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+ ---> System.FormatException: IDX10400: Unable to decode: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64url encoded string.
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoding.ValidateAndGetOutputSize(ReadOnlySpan`1 strSpan, Int32 offset, Int32 length)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateClaimSet(ReadOnlySpan`1 strSpan, Int32 startIndex, Int32 length, Boolean createHeaderClaimSet)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2026-06-03 00:57:57.285 +05:30 [INF] Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+2026-06-03 00:57:57.289 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-06-03 00:57:57.292 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-06-03 00:57:57.292 +05:30 [INF] HTTP POST /api/User/bulk-upload responded 401 in 73.6381 ms
+2026-06-03 00:57:57.293 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5289/api/User/bulk-upload - 401 0 null 74.0931ms
+2026-06-03 00:58:24.949 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5289/api/User/bulk-upload - application/json 418
+2026-06-03 00:58:24.950 +05:30 [INF] Failed to validate the token.
+System.ArgumentException: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+ ---> System.FormatException: IDX10400: Unable to decode: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64url encoded string.
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoding.ValidateAndGetOutputSize(ReadOnlySpan`1 strSpan, Int32 offset, Int32 length)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateClaimSet(ReadOnlySpan`1 strSpan, Int32 startIndex, Int32 length, Boolean createHeaderClaimSet)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2026-06-03 00:58:24.950 +05:30 [INF] Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+2026-06-03 00:58:24.955 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-06-03 00:58:24.958 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-06-03 00:58:24.958 +05:30 [INF] HTTP POST /api/User/bulk-upload responded 401 in 8.2795 ms
+2026-06-03 00:58:24.958 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5289/api/User/bulk-upload - 401 0 null 8.7235ms
+2026-06-03 01:00:31.932 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5289/api/Auth/Login - application/json 52
+2026-06-03 01:00:31.983 +05:30 [INF] Executing endpoint 'Recruitment.API.Controllers.AuthController.Login (Recruitment.API)'
+2026-06-03 01:00:32.011 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Recruitment.Common.DTOs.LoginRequestDto) on controller Recruitment.API.Controllers.AuthController (Recruitment.API).
+2026-06-03 01:00:32.530 +05:30 [INF] Executing OkObjectResult, writing value of type 'Recruitment.Common.DTOs.LoginResponseDto'.
+2026-06-03 01:00:32.536 +05:30 [INF] Executed action Recruitment.API.Controllers.AuthController.Login (Recruitment.API) in 524.2725ms
+2026-06-03 01:00:32.538 +05:30 [INF] Executed endpoint 'Recruitment.API.Controllers.AuthController.Login (Recruitment.API)'
+2026-06-03 01:00:32.539 +05:30 [INF] HTTP POST /api/Auth/Login responded 200 in 593.0990 ms
+2026-06-03 01:00:32.541 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5289/api/Auth/Login - 200 null application/json; charset=utf-8 616.3825ms
+2026-06-03 01:00:55.473 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5289/api/User/bulk-upload - application/json 418
+2026-06-03 01:00:55.715 +05:30 [INF] Executing endpoint 'Recruitment.API.Controllers.UserController.BulkUploadUsers (Recruitment.API)'
+2026-06-03 01:00:55.767 +05:30 [INF] Route matched with {action = "BulkUploadUsers", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] BulkUploadUsers(System.Collections.Generic.List`1[Recruitment.Common.DTOs.BulkUserDto]) on controller Recruitment.API.Controllers.UserController (Recruitment.API).
+2026-06-03 01:00:56.084 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2026-06-03 01:00:56.086 +05:30 [INF] Executed action Recruitment.API.Controllers.UserController.BulkUploadUsers (Recruitment.API) in 318.977ms
+2026-06-03 01:00:56.086 +05:30 [INF] Executed endpoint 'Recruitment.API.Controllers.UserController.BulkUploadUsers (Recruitment.API)'
+2026-06-03 01:00:56.086 +05:30 [INF] HTTP POST /api/User/bulk-upload responded 200 in 610.9554 ms
+2026-06-03 01:00:56.086 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5289/api/User/bulk-upload - 200 null text/plain; charset=utf-8 613.1222ms
+2026-06-03 01:16:38.728 +05:30 [INF] Application is shutting down...
+2026-06-03 01:17:45.474 +05:30 [INF] User profile is available. Using 'C:\Users\Archana Iyar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-03 01:17:45.566 +05:30 [INF] Now listening on: http://localhost:5289
+2026-06-03 01:17:45.567 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-03 01:17:45.567 +05:30 [INF] Hosting environment: Development
+2026-06-03 01:17:45.567 +05:30 [INF] Content root path: D:\Syssfore(backend)\Recruitment.API\Recruitment.API
+2026-06-03 01:18:02.083 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5289/swagger/index.html - null null
+2026-06-03 01:18:02.309 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 188.6255 ms
+2026-06-03 01:18:02.316 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5289/swagger/index.html - 200 null text/html;charset=utf-8 238.1ms
+2026-06-03 01:18:02.511 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5289/swagger/v1/swagger.json - null null
+2026-06-03 01:18:02.817 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 306.0188 ms
+2026-06-03 01:18:02.817 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5289/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 308.3824ms
+2026-06-03 01:18:09.166 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5289/api/User?pageNumber=1&pageSize=10 - null null
+2026-06-03 01:18:09.177 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-06-03 01:18:09.240 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin|HR)
+2026-06-03 01:18:09.248 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-06-03 01:18:09.248 +05:30 [INF] HTTP GET /api/User responded 401 in 78.2936 ms
+2026-06-03 01:18:09.249 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5289/api/User?pageNumber=1&pageSize=10 - 401 0 null 82.6803ms
+2026-06-03 01:24:09.025 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5289/swagger/index.html - null null
+2026-06-03 01:24:09.094 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 49.3811 ms
+2026-06-03 01:24:09.098 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5289/swagger/index.html - 200 null text/html;charset=utf-8 75.9426ms
+2026-06-03 01:24:09.307 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5289/swagger/v1/swagger.json - null null
+2026-06-03 01:24:09.547 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 239.3593 ms
+2026-06-03 01:24:09.547 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5289/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 240.0878ms
+2026-06-03 01:24:24.359 +05:30 [INF] Application is shutting down...
+2026-06-03 01:24:34.036 +05:30 [INF] User profile is available. Using 'C:\Users\Archana Iyar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-03 01:24:34.140 +05:30 [INF] Now listening on: http://localhost:5289
+2026-06-03 01:24:34.141 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-03 01:24:34.141 +05:30 [INF] Hosting environment: Development
+2026-06-03 01:24:34.141 +05:30 [INF] Content root path: D:\Syssfore(backend)\Recruitment.API\Recruitment.API
+2026-06-03 01:24:39.462 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5289/swagger/index.html - null null
+2026-06-03 01:24:39.716 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 175.3539 ms
+2026-06-03 01:24:39.723 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5289/swagger/index.html - 200 null text/html;charset=utf-8 268.6066ms
+2026-06-03 01:24:39.854 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5289/swagger/v1/swagger.json - null null
+2026-06-03 01:24:39.911 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 57.0236 ms
+2026-06-03 01:24:39.911 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5289/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 58.271ms
+2026-06-03 01:24:49.398 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5289/swagger/index.html - null null
+2026-06-03 01:24:49.404 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 5.5877 ms
+2026-06-03 01:24:49.404 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5289/swagger/index.html - 200 null text/html;charset=utf-8 6.1455ms
+2026-06-03 01:24:49.449 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5289/swagger/v1/swagger.json - null null
+2026-06-03 01:24:49.451 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 2.2368 ms
+2026-06-03 01:24:49.452 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5289/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 2.5808ms
+2026-06-03 01:25:03.653 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5289/swagger/index.html - null null
+2026-06-03 01:25:03.653 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 0.2967 ms
+2026-06-03 01:25:03.653 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5289/swagger/index.html - 200 null text/html;charset=utf-8 0.5151ms
+2026-06-03 01:25:03.701 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5289/swagger/v1/swagger.json - null null
+2026-06-03 01:25:03.705 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 3.2175 ms
+2026-06-03 01:25:03.705 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5289/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 3.7561ms
+2026-06-03 01:25:04.472 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5289/swagger/index.html - null null
+2026-06-03 01:25:04.473 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 1.1179 ms
+2026-06-03 01:25:04.473 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5289/swagger/index.html - 200 null text/html;charset=utf-8 1.3598ms
+2026-06-03 01:25:04.517 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5289/swagger/v1/swagger.json - null null
+2026-06-03 01:25:04.521 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 3.8247 ms
+2026-06-03 01:25:04.522 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5289/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 4.2402ms
+2026-06-03 01:25:04.664 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5289/swagger/index.html - null null
+2026-06-03 01:25:04.666 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 1.6092 ms
+2026-06-03 01:25:04.667 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5289/swagger/index.html - 200 null text/html;charset=utf-8 2.3552ms
+2026-06-03 01:25:04.709 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5289/swagger/v1/swagger.json - null null
+2026-06-03 01:25:04.712 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 2.1483 ms
+2026-06-03 01:25:04.712 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5289/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 2.4716ms
+2026-06-03 01:25:04.855 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5289/swagger/index.html - null null
+2026-06-03 01:25:04.856 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 0.2316 ms
+2026-06-03 01:25:04.856 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5289/swagger/index.html - 200 null text/html;charset=utf-8 0.4396ms
+2026-06-03 01:25:04.906 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5289/swagger/v1/swagger.json - null null
+2026-06-03 01:25:04.908 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 2.6028 ms
+2026-06-03 01:25:04.909 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5289/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 3.1305ms
+2026-06-03 01:25:05.083 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5289/swagger/index.html - null null
+2026-06-03 01:25:05.084 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 0.2834 ms
+2026-06-03 01:25:05.084 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5289/swagger/index.html - 200 null text/html;charset=utf-8 0.6378ms
+2026-06-03 01:25:05.130 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5289/swagger/v1/swagger.json - null null
+2026-06-03 01:25:05.133 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 3.3784 ms
+2026-06-03 01:25:05.133 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5289/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 3.7505ms
+2026-06-03 01:25:18.816 +05:30 [INF] Application is shutting down...
+2026-06-03 01:25:27.886 +05:30 [INF] User profile is available. Using 'C:\Users\Archana Iyar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-03 01:25:27.975 +05:30 [INF] Now listening on: http://localhost:5289
+2026-06-03 01:25:27.977 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-03 01:25:27.977 +05:30 [INF] Hosting environment: Development
+2026-06-03 01:25:27.977 +05:30 [INF] Content root path: D:\Syssfore(backend)\Recruitment.API\Recruitment.API
+2026-06-03 01:25:35.849 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5289/swagger/index.html - null null
+2026-06-03 01:25:36.047 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 162.2863 ms
+2026-06-03 01:25:36.051 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5289/swagger/index.html - 200 null text/html;charset=utf-8 203.6713ms
+2026-06-03 01:25:36.157 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5289/swagger/v1/swagger.json - null null
+2026-06-03 01:25:36.408 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 250.6972 ms
+2026-06-03 01:25:36.408 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5289/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 252.5835ms
+2026-06-03 01:26:14.539 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5289/api/Auth/Login - application/json 47
+2026-06-03 01:26:14.553 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-06-03 01:26:14.617 +05:30 [INF] Executing endpoint 'Recruitment.API.Controllers.AuthController.Login (Recruitment.API)'
+2026-06-03 01:26:14.660 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Recruitment.Common.DTOs.LoginRequestDto) on controller Recruitment.API.Controllers.AuthController (Recruitment.API).
+2026-06-03 01:26:14.736 +05:30 [INF] Executed action Recruitment.API.Controllers.AuthController.Login (Recruitment.API) in 68.7314ms
+2026-06-03 01:26:14.737 +05:30 [INF] Executed endpoint 'Recruitment.API.Controllers.AuthController.Login (Recruitment.API)'
+2026-06-03 01:26:15.545 +05:30 [ERR] HTTP POST /api/Auth/Login responded 500 in 999.3998 ms
+2026-06-03 01:26:15.546 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5289/api/Auth/Login - 500 null application/json; charset=utf-8 1008.0966ms
+2026-06-03 01:26:48.863 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5289/api/Auth/Login - application/json 52
+2026-06-03 01:26:48.868 +05:30 [INF] Executing endpoint 'Recruitment.API.Controllers.AuthController.Login (Recruitment.API)'
+2026-06-03 01:26:48.869 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Recruitment.Common.DTOs.LoginRequestDto) on controller Recruitment.API.Controllers.AuthController (Recruitment.API).
+2026-06-03 01:26:49.350 +05:30 [INF] Executing OkObjectResult, writing value of type 'Recruitment.Common.DTOs.LoginResponseDto'.
+2026-06-03 01:26:49.361 +05:30 [INF] Executed action Recruitment.API.Controllers.AuthController.Login (Recruitment.API) in 491.5288ms
+2026-06-03 01:26:49.362 +05:30 [INF] Executed endpoint 'Recruitment.API.Controllers.AuthController.Login (Recruitment.API)'
+2026-06-03 01:26:49.365 +05:30 [INF] HTTP POST /api/Auth/Login responded 200 in 498.5478 ms
+2026-06-03 01:26:49.365 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5289/api/Auth/Login - 200 null application/json; charset=utf-8 501.6728ms
+2026-06-03 01:29:16.105 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5289/swagger/index.html - null null
+2026-06-03 01:29:16.157 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 39.4433 ms
+2026-06-03 01:29:16.160 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5289/swagger/index.html - 200 null text/html;charset=utf-8 58.6724ms
+2026-06-03 01:29:16.323 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5289/swagger/v1/swagger.json - null null
+2026-06-03 01:29:16.386 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 63.4602 ms
+2026-06-03 01:29:16.387 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5289/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 63.8464ms
+2026-06-03 01:29:18.349 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5289/swagger/index.html - null null
+2026-06-03 01:29:18.351 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 0.3852 ms
+2026-06-03 01:29:18.351 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5289/swagger/index.html - 200 null text/html;charset=utf-8 2.4145ms
+2026-06-03 01:29:18.396 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5289/swagger/v1/swagger.json - null null
+2026-06-03 01:29:18.405 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 8.8549 ms
+2026-06-03 01:29:18.405 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5289/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 9.2306ms
+2026-06-03 01:29:24.548 +05:30 [INF] Application is shutting down...
+2026-06-03 01:29:35.151 +05:30 [INF] User profile is available. Using 'C:\Users\Archana Iyar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-03 01:29:35.234 +05:30 [INF] Now listening on: http://localhost:5289
+2026-06-03 01:29:35.236 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-03 01:29:35.236 +05:30 [INF] Hosting environment: Development
+2026-06-03 01:29:35.236 +05:30 [INF] Content root path: D:\Syssfore(backend)\Recruitment.API\Recruitment.API
+2026-06-03 01:29:46.390 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5289/swagger/index.html - null null
+2026-06-03 01:29:46.634 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 186.6585 ms
+2026-06-03 01:29:46.639 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5289/swagger/index.html - 200 null text/html;charset=utf-8 255.5635ms
+2026-06-03 01:29:46.691 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5289/swagger/v1/swagger.json - null null
+2026-06-03 01:29:47.060 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 368.4001 ms
+2026-06-03 01:29:47.060 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5289/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 369.8234ms
+2026-06-03 01:31:15.557 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5289/swagger/index.html - null null
+2026-06-03 01:31:15.575 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 12.6213 ms
+2026-06-03 01:31:15.578 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5289/swagger/index.html - 200 null text/html;charset=utf-8 21.6262ms
+2026-06-03 01:31:15.691 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5289/swagger/v1/swagger.json - null null
+2026-06-03 01:31:15.769 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 78.2854 ms
+2026-06-03 01:31:15.770 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5289/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 79.3694ms
+2026-06-03 01:31:21.235 +05:30 [INF] Application is shutting down...
+2026-06-03 01:31:30.162 +05:30 [INF] User profile is available. Using 'C:\Users\Archana Iyar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-03 01:31:30.345 +05:30 [INF] Now listening on: http://localhost:5289
+2026-06-03 01:31:30.346 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-03 01:31:30.346 +05:30 [INF] Hosting environment: Development
+2026-06-03 01:31:30.346 +05:30 [INF] Content root path: D:\Syssfore(backend)\Recruitment.API\Recruitment.API
+2026-06-03 01:31:32.238 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5289/swagger/index.html - null null
+2026-06-03 01:31:32.349 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 87.1957 ms
+2026-06-03 01:31:32.351 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5289/swagger/index.html - 200 null text/html;charset=utf-8 116.1737ms
+2026-06-03 01:31:32.392 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5289/swagger/v1/swagger.json - null null
+2026-06-03 01:31:32.502 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 109.7518 ms
+2026-06-03 01:31:32.503 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5289/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 110.8482ms
+2026-06-03 01:31:47.903 +05:30 [INF] Application is shutting down...
+2026-06-03 09:58:37.629 +05:30 [INF] User profile is available. Using 'C:\Users\Archana Iyar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-03 09:58:37.736 +05:30 [INF] Now listening on: http://localhost:5289
+2026-06-03 09:58:37.737 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-03 09:58:37.737 +05:30 [INF] Hosting environment: Development
+2026-06-03 09:58:37.737 +05:30 [INF] Content root path: D:\Syssfore(backend)\Recruitment.API\Recruitment.API
+2026-06-03 09:59:18.647 +05:30 [INF] Application is shutting down...
+2026-06-03 09:59:33.646 +05:30 [INF] User profile is available. Using 'C:\Users\Archana Iyar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-03 09:59:33.735 +05:30 [INF] Now listening on: http://localhost:5289
+2026-06-03 09:59:33.736 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-03 09:59:33.736 +05:30 [INF] Hosting environment: Development
+2026-06-03 09:59:33.736 +05:30 [INF] Content root path: D:\Syssfore(backend)\Recruitment.API\Recruitment.API
+2026-06-03 10:00:58.274 +05:30 [INF] Application is shutting down...
+2026-06-03 10:01:13.128 +05:30 [INF] User profile is available. Using 'C:\Users\Archana Iyar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-03 10:01:13.235 +05:30 [INF] Now listening on: http://localhost:5289
+2026-06-03 10:01:13.237 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-03 10:01:13.237 +05:30 [INF] Hosting environment: Development
+2026-06-03 10:01:13.237 +05:30 [INF] Content root path: D:\Syssfore(backend)\Recruitment.API\Recruitment.API
+2026-06-03 10:01:29.918 +05:30 [INF] Application is shutting down...
+2026-06-03 10:01:35.246 +05:30 [INF] User profile is available. Using 'C:\Users\Archana Iyar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-03 10:01:35.353 +05:30 [INF] Now listening on: http://localhost:5289
+2026-06-03 10:01:35.354 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-03 10:01:35.354 +05:30 [INF] Hosting environment: Development
+2026-06-03 10:01:35.355 +05:30 [INF] Content root path: D:\Syssfore(backend)\Recruitment.API\Recruitment.API
+2026-06-03 10:01:50.461 +05:30 [INF] Application is shutting down...
+2026-06-03 10:06:47.389 +05:30 [INF] User profile is available. Using 'C:\Users\Archana Iyar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-03 10:06:47.503 +05:30 [INF] Now listening on: http://localhost:5289
+2026-06-03 10:06:47.504 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-03 10:06:47.504 +05:30 [INF] Hosting environment: Development
+2026-06-03 10:06:47.505 +05:30 [INF] Content root path: D:\Syssfore(backend)\Recruitment.API\Recruitment.API
+2026-06-03 10:07:49.389 +05:30 [INF] Application is shutting down...
+2026-06-03 10:12:17.042 +05:30 [INF] User profile is available. Using 'C:\Users\Archana Iyar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-03 10:12:17.137 +05:30 [INF] Now listening on: http://localhost:5289
+2026-06-03 10:12:17.139 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-03 10:12:17.139 +05:30 [INF] Hosting environment: Development
+2026-06-03 10:12:17.139 +05:30 [INF] Content root path: D:\Syssfore(backend)\Recruitment.API\Recruitment.API

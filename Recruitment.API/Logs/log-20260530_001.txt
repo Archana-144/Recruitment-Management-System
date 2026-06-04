@@ -1,0 +1,144 @@
+2026-05-30 22:50:10.975 +05:30 [INF] User profile is available. Using 'C:\Users\Archana Iyar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-30 22:50:11.072 +05:30 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5289: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ ---> System.Net.Sockets.SocketException (10048): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2026-05-30 22:51:24.576 +05:30 [INF] User profile is available. Using 'C:\Users\Archana Iyar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-30 22:51:24.676 +05:30 [INF] Now listening on: http://localhost:5289
+2026-05-30 22:51:24.677 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-30 22:51:24.677 +05:30 [INF] Hosting environment: Development
+2026-05-30 22:51:24.677 +05:30 [INF] Content root path: D:\Syssfore(backend)\Recruitment.API\Recruitment.API
+2026-05-30 22:51:34.323 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5289/swagger/index.html - null null
+2026-05-30 22:51:34.535 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5289/swagger/index.html - 200 null text/html;charset=utf-8 216.0464ms
+2026-05-30 22:51:34.663 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5289/swagger/v1/swagger.json - null null
+2026-05-30 22:51:34.808 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - Recruitment.API.Controllers.UserController.CreateUser (Recruitment.API). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-05-30 22:51:34.861 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5289/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 198.3981ms
+2026-05-30 22:52:20.854 +05:30 [INF] Application is shutting down...
+2026-05-30 22:52:34.501 +05:30 [INF] User profile is available. Using 'C:\Users\Archana Iyar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-30 22:52:34.591 +05:30 [INF] Now listening on: http://localhost:5289
+2026-05-30 22:52:34.593 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-30 22:52:34.593 +05:30 [INF] Hosting environment: Development
+2026-05-30 22:52:34.593 +05:30 [INF] Content root path: D:\Syssfore(backend)\Recruitment.API\Recruitment.API
+2026-05-30 22:53:35.972 +05:30 [INF] Application is shutting down...
+2026-05-30 22:55:30.345 +05:30 [INF] User profile is available. Using 'C:\Users\Archana Iyar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-30 22:55:30.685 +05:30 [INF] Now listening on: http://localhost:5289
+2026-05-30 22:55:30.689 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-30 22:55:30.690 +05:30 [INF] Hosting environment: Development
+2026-05-30 22:55:30.690 +05:30 [INF] Content root path: D:\Syssfore(backend)\Recruitment.API\Recruitment.API
+2026-05-30 22:55:41.665 +05:30 [INF] Application is shutting down...
+2026-05-30 22:56:21.332 +05:30 [INF] User profile is available. Using 'C:\Users\Archana Iyar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-30 22:56:21.540 +05:30 [INF] Now listening on: http://localhost:5289
+2026-05-30 22:56:21.542 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-30 22:56:21.543 +05:30 [INF] Hosting environment: Development
+2026-05-30 22:56:21.543 +05:30 [INF] Content root path: D:\Syssfore(backend)\Recruitment.API\Recruitment.API
+2026-05-30 22:59:18.593 +05:30 [INF] Application is shutting down...
+2026-05-30 23:00:02.446 +05:30 [INF] User profile is available. Using 'C:\Users\Archana Iyar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-30 23:00:02.553 +05:30 [INF] Now listening on: http://localhost:5289
+2026-05-30 23:00:02.555 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-30 23:00:02.555 +05:30 [INF] Hosting environment: Development
+2026-05-30 23:00:02.555 +05:30 [INF] Content root path: D:\Syssfore(backend)\Recruitment.API\Recruitment.API
+2026-05-30 23:08:36.788 +05:30 [INF] Application is shutting down...
+2026-05-30 23:09:31.673 +05:30 [INF] User profile is available. Using 'C:\Users\Archana Iyar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-30 23:09:31.879 +05:30 [INF] Now listening on: http://localhost:5289
+2026-05-30 23:09:31.881 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-30 23:09:31.882 +05:30 [INF] Hosting environment: Development
+2026-05-30 23:09:31.882 +05:30 [INF] Content root path: D:\Syssfore(backend)\Recruitment.API\Recruitment.API
+2026-05-30 23:11:15.826 +05:30 [INF] Application is shutting down...
+2026-05-30 23:11:54.974 +05:30 [INF] User profile is available. Using 'C:\Users\Archana Iyar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-30 23:11:56.071 +05:30 [INF] Now listening on: https://localhost:7150
+2026-05-30 23:11:56.072 +05:30 [INF] Now listening on: http://localhost:5289
+2026-05-30 23:11:56.239 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-30 23:11:56.240 +05:30 [INF] Hosting environment: Development
+2026-05-30 23:11:56.240 +05:30 [INF] Content root path: D:\Syssfore(backend)\Recruitment.API\Recruitment.API
+2026-05-30 23:12:01.509 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7150/ - null null
+2026-05-30 23:12:06.131 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7150/ - 404 null null 4655.9887ms
+2026-05-30 23:12:06.138 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7150/, Response status code: 404
+2026-05-30 23:12:59.377 +05:30 [INF] User profile is available. Using 'C:\Users\Archana Iyar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-30 23:12:59.727 +05:30 [INF] Application is shutting down...
+2026-05-30 23:12:59.854 +05:30 [ERR] Hosting failed to start
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2026-05-30 23:13:17.606 +05:30 [INF] User profile is available. Using 'C:\Users\Archana Iyar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-30 23:13:17.724 +05:30 [INF] Now listening on: http://localhost:5289
+2026-05-30 23:13:17.726 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-30 23:13:17.726 +05:30 [INF] Hosting environment: Development
+2026-05-30 23:13:17.727 +05:30 [INF] Content root path: D:\Syssfore(backend)\Recruitment.API\Recruitment.API
+2026-05-30 23:13:32.534 +05:30 [INF] Application is shutting down...
+2026-05-30 23:13:41.918 +05:30 [INF] User profile is available. Using 'C:\Users\Archana Iyar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-30 23:13:42.980 +05:30 [INF] Now listening on: https://localhost:7150
+2026-05-30 23:13:42.982 +05:30 [INF] Now listening on: http://localhost:5289
+2026-05-30 23:13:43.191 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-30 23:13:43.191 +05:30 [INF] Hosting environment: Development
+2026-05-30 23:13:43.191 +05:30 [INF] Content root path: D:\Syssfore(backend)\Recruitment.API\Recruitment.API
+2026-05-30 23:13:44.108 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7150/ - null null
+2026-05-30 23:13:44.858 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7150/ - 404 null null 785.0644ms
+2026-05-30 23:13:44.864 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7150/, Response status code: 404
+2026-05-30 23:36:02.211 +05:30 [INF] User profile is available. Using 'C:\Users\Archana Iyar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-30 23:36:02.408 +05:30 [INF] Now listening on: http://localhost:5289
+2026-05-30 23:36:02.411 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-30 23:36:02.411 +05:30 [INF] Hosting environment: Development
+2026-05-30 23:36:02.411 +05:30 [INF] Content root path: D:\Syssfore(backend)\Recruitment.API\Recruitment.API
+2026-05-30 23:36:30.284 +05:30 [INF] Application is shutting down...
+2026-05-30 23:36:46.827 +05:30 [INF] User profile is available. Using 'C:\Users\Archana Iyar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-30 23:36:48.075 +05:30 [INF] Now listening on: https://localhost:7150
+2026-05-30 23:36:48.077 +05:30 [INF] Now listening on: http://localhost:5289
+2026-05-30 23:36:48.324 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-30 23:36:48.324 +05:30 [INF] Hosting environment: Development
+2026-05-30 23:36:48.325 +05:30 [INF] Content root path: D:\Syssfore(backend)\Recruitment.API\Recruitment.API
+2026-05-30 23:36:51.654 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7150/ - null null
+2026-05-30 23:36:52.355 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7150/ - 404 null null 749.7656ms
+2026-05-30 23:36:52.362 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7150/, Response status code: 404
+2026-05-30 23:37:13.358 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5289/swagger/v1/swagger.json - null null
+2026-05-30 23:37:13.511 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - Recruitment.API.Controllers.UserController.CreateUser (Recruitment.API). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-05-30 23:37:13.746 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5289/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 398.8924ms
+2026-05-30 23:38:43.820 +05:30 [INF] User profile is available. Using 'C:\Users\Archana Iyar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-30 23:38:44.155 +05:30 [INF] Now listening on: http://localhost:5289
+2026-05-30 23:38:44.157 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-30 23:38:44.158 +05:30 [INF] Hosting environment: Development
+2026-05-30 23:38:44.158 +05:30 [INF] Content root path: D:\Syssfore(backend)\Recruitment.API\Recruitment.API
+2026-05-30 23:40:24.866 +05:30 [INF] Application is shutting down...
+2026-05-30 23:40:33.189 +05:30 [INF] User profile is available. Using 'C:\Users\Archana Iyar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-30 23:40:33.328 +05:30 [INF] Now listening on: http://localhost:5289
+2026-05-30 23:40:33.331 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-30 23:40:33.331 +05:30 [INF] Hosting environment: Development
+2026-05-30 23:40:33.331 +05:30 [INF] Content root path: D:\Syssfore(backend)\Recruitment.API\Recruitment.API
+2026-05-30 23:40:38.343 +05:30 [INF] Application is shutting down...
