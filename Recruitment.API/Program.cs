@@ -23,10 +23,16 @@ var builder = WebApplication.CreateBuilder(args);
 //builder.Host.UseSerilog();
 
 // Controllers
-builder.Services.AddControllers();
+builder.Services.AddControllers(options =>
+{
+    options.SuppressAsyncSuffixInActionNames = false;
+});
+
+
+
 
 builder.Services.AddEndpointsApiExplorer();
-
+builder.Services.AddControllers();
 // Dependency Injection
 
 

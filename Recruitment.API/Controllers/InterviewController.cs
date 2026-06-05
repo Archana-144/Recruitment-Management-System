@@ -5,7 +5,7 @@ using Recruitment.Services.Abstraction;
 
 namespace Recruitment.API.Controllers;
 
-[Route("api/[controller]")]
+[Route("api/[controller]/[action]")]
 [ApiController]
 
 
@@ -26,9 +26,9 @@ public class InterviewController
     /// Retrieves all interviews.
     /// </summary>
     [Authorize(Roles = "Admin,HR,Interviewer")]
-    [HttpGet("GetInterviewsAsync")]
+    [HttpGet]
     public async Task<IActionResult>
-        GetInterviews()
+        GetInterviewsAsync()
     {
         var interviews =
             await _interviewService
@@ -41,9 +41,9 @@ public class InterviewController
     /// Retrieves interview by Guid.
     /// </summary>
     [Authorize(Roles = "Admin,HR,Interviewer")]
-    [HttpGet("GetInterviewByGuidAsync/{interviewGuid}")]
+    [HttpGet("{interviewGuid}")]
     public async Task<IActionResult>
-        GetInterviewByGuid(
+        GetInterviewByGuidAsync(
             Guid guid)
     {
         var interview =
@@ -63,7 +63,7 @@ public class InterviewController
     [Authorize(Roles = "Admin,HR")]
     [HttpPost("CreateInterviewAsync")]
     public async Task<IActionResult>
-        CreateInterview(
+        CreateInterviewAsync(
             CreateInterviewDto dto)
     {
         if (!ModelState.IsValid)
@@ -87,9 +87,9 @@ public class InterviewController
     /// Updates interview.
     /// </summary>
     [Authorize(Roles = "Admin,HR,Interviewer")]
-    [HttpPut("UpdateInterviewAsync/{interviewGuid}")]
+    [HttpPut("{interviewGuid}")]
     public async Task<IActionResult>
-        UpdateInterview(
+        UpdateInterviewAsync(
             Guid guid,
             UpdateInterviewDto dto)
     {
@@ -110,9 +110,9 @@ public class InterviewController
     /// Deletes interview.
     /// </summary>
     [Authorize(Roles = "Admin")]
-    [HttpDelete("DeleteInterviewAsync/{interviewGuid}")]
+    [HttpDelete("{interviewGuid}")]
     public async Task<IActionResult>
-        DeleteInterview(
+        DeleteInterviewAsync(
             Guid guid)
     {
         bool result =

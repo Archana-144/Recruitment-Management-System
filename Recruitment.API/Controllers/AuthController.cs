@@ -5,7 +5,7 @@ using Recruitment.Services.Abstraction;
 
 namespace Recruitment.API.Controllers;
 
-[Route("api/[controller]")]
+[Route("api/[controller]/[action]")]
 [ApiController]
 
 
@@ -22,8 +22,8 @@ public class AuthController : ControllerBase
     /// <summary>
     /// Authenticates user and returns JWT token.
     /// </summary>
-    [HttpPost("AuthenticateAsync")]
-    public async Task<IActionResult> Login(
+    [HttpPost]
+    public async Task<IActionResult> LoginAsync(
       LoginRequestDto dto)
     {
         var response =

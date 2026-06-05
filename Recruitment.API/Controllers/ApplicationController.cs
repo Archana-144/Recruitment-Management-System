@@ -5,7 +5,7 @@ using Recruitment.Services.Abstraction;
 using System.Security.Claims;
 namespace Recruitment.API.Controllers;
 
-[Route("api/[controller]")]
+[Route("api/[controller]/[action]")]
 [ApiController]
 
 public class ApplicationController : ControllerBase
@@ -24,9 +24,9 @@ public class ApplicationController : ControllerBase
     /// Retrieves all applications.
     /// </summary>
      [Authorize(Roles = "Admin,HR,Interviewer")]
-    [HttpGet("GetApplicationsAsync")]
+    [HttpGet]
     public async Task<IActionResult>
-        GetApplications(
+        GetApplicationsAsync(
             int pageNumber = 1,
             int pageSize = 10)
     {
@@ -44,9 +44,9 @@ public class ApplicationController : ControllerBase
     /// </summary>
     /// 
     [Authorize(Roles = "Candidate")]
-    [HttpPost("CreateApplicationAsync")]
+    [HttpPost]
     public async Task<IActionResult>
-     CreateApplication(
+     CreateApplicationAsync(
          CreateApplicationDto dto)
     {
         if (!ModelState.IsValid)
@@ -74,9 +74,9 @@ public class ApplicationController : ControllerBase
     /// Retrieves an application by Guid.
     /// </summary>
     [Authorize(Roles = "Admin,HR,Interviewer")]
-    [HttpGet("GetApplicationByGuidAsync/{guid}")]
+    [HttpGet("{guid}")]
     public async Task<IActionResult>
- GetApplicationByGuid(
+ GetApplicationByGuidAsync(
      Guid guid)
     { 
         var application =
@@ -94,9 +94,9 @@ public class ApplicationController : ControllerBase
     /// Updates application status.
     /// </summary>
     [Authorize(Roles = "Admin,HR")]
-    [HttpPut("UpdateApplicationAsync/{guid}")]
+    [HttpPut("{guid}")]
     public async Task<IActionResult>
-UpdateApplication(
+UpdateApplicationAsync(
     Guid guid,
     UpdateApplicationDto dto)
     {
@@ -117,9 +117,9 @@ UpdateApplication(
     /// Soft deletes an application.
     /// </summary>
     [Authorize(Roles = "Admin")]
-    [HttpDelete("DeleteApplicationAsync/{Guid}")]
+    [HttpDelete("{Guid}")]
     public async Task<IActionResult>
-        DeleteApplication(
+        DeleteApplicationAsync(
             Guid guid)
     {
         bool result =

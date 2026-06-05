@@ -7,7 +7,7 @@ using Recruitment.Services.Abstraction;
 namespace Recruitment.API.Controllers;
 
 [Authorize]
-[Route("api/[controller]")]
+[Route("api/[controller]/[action]")]
 
 [ApiController]
 
@@ -33,9 +33,9 @@ public UserController(
     /// Retrieves all active users.
     /// </summary>
     [Authorize(Roles = "Admin,HR")]
-    [HttpGet("GetUsersAsync")]
+    [HttpGet]
     public async Task<IActionResult>
-    GetUsers(
+    GetUsersAsync(
     int pageNumber = 1,
     int pageSize = 10,
     string? role = null)
@@ -52,9 +52,9 @@ public UserController(
     /// Retrieves a user based on UserGuid.
     /// </summary>
     [Authorize(Roles = "Admin,HR")]
-    [HttpGet("GetUserByGuidAsync/{userGuid}")]
+    [HttpGet("{userGuid}")]
     public async Task<IActionResult>
-    GetUserByGuid(Guid guid)
+    GetUserByGuidAsync(Guid guid)
     {
         var user =
             await _userService
@@ -70,9 +70,9 @@ public UserController(
     /// Creates a new user.
     /// </summary>
     [Authorize(Roles = "Admin")]
-    [HttpPost("CreateUserAsync")]
+    [HttpPost]
     public async Task<IActionResult>
-    CreateUser(CreateUserDto dto)
+    CreateUserAsync(CreateUserDto dto)
     {
         if (!ModelState.IsValid)
             return BadRequest(ModelState);
@@ -92,9 +92,9 @@ public UserController(
     /// Updates an existing user.
     /// </summary>
     [Authorize(Roles = "Admin")]
-    [HttpPut("UpdateUserAsync/{userGuid}")]
+    [HttpPut("{userGuid}")]
     public async Task<IActionResult>
-    UpdateUser(
+    UpdateUserAsync(
         Guid guid,
         UpdateUserDto dto)
     {
@@ -118,9 +118,9 @@ public UserController(
     /// Soft deletes a user.
     /// </summary>
     [Authorize(Roles = "Admin")]
-    [HttpDelete("DeleteUserAsync/{userGuid}")]
+    [HttpDelete("{userGuid}")]
     public async Task<IActionResult>
-    DeleteUser(Guid guid)
+    DeleteUserAsync(Guid guid)
     {
         bool result =
             await _userService
@@ -142,7 +142,7 @@ public UserController(
    
     [HttpPost("bulk-upload")]
     public async Task<IActionResult>
-    BulkUploadUsers(
+    BulkUploadUsersAsync(
         List<BulkUserDto> users)
     {
         bool result =

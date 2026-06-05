@@ -7,7 +7,7 @@ using Recruitment.Services.Abstraction;
 namespace Recruitment.API.Controllers;
 
 [Authorize]
-[Route("api/[controller]")]
+[Route("api/[controller]/[action]")]
 [ApiController]
 
 /// <summary>
@@ -29,9 +29,9 @@ public JobController(
     /// Retrieves all active job postings.
     /// </summary>
     [Authorize(Roles = "Admin,HR,Candidate")]
-    [HttpGet("GetJobsAsync")]
+    [HttpGet]
     public async Task<IActionResult>
-    GetJobs(
+    GetJobsAsync(
         int pageNumber = 1,
         int pageSize = 10)
     {
@@ -48,9 +48,9 @@ public JobController(
     /// Retrieves a job posting by Guid.
     /// </summary>
     [Authorize(Roles = "Admin,HR,Candidate")]
-    [HttpGet("GetJobByGuidAsync/{jobGuid}")]
+    [HttpGet("{jobGuid}")]
     public async Task<IActionResult>
-    GetJobByGuid(
+    GetJobByGuidAsync(
         Guid guid)
     {
         var job =
@@ -69,9 +69,9 @@ public JobController(
     /// </summary>
 
     [Authorize(Roles = "Admin,HR")]
-    [HttpPost("CreateJobAsync")]
+    [HttpPost]
     public async Task<IActionResult>
-    CreateJob(
+    CreateJobAsync(
         CreateJobPostingDto dto)
     {
         if (!ModelState.IsValid)
@@ -92,9 +92,9 @@ public JobController(
     /// Updates an existing job posting.
     /// </summary>
     [Authorize(Roles = "Admin,HR")]
-    [HttpPut("UpdateJobAsync/{jobGuid}")]
+    [HttpPut("{jobGuid}")]
     public async Task<IActionResult>
-    UpdateJob(
+    UpdateJobAsync(
         Guid guid,
         UpdateJobPostingDto dto)
     {
@@ -115,9 +115,9 @@ public JobController(
     /// Soft deletes a job posting.
     /// </summary>
     [Authorize(Roles = "Admin")]
-    [HttpDelete("DeleteJobAsync/{jobGuid}")]
+    [HttpDelete("{jobGuid}")]
     public async Task<IActionResult>
-    DeleteJob(
+    DeleteJobAsync(
         Guid guid)
     {
         bool result =
