@@ -9,7 +9,6 @@ The application enables recruiters to manage job postings, track applications, r
 ### 👤 Candidate Module
 - Candidate registration and login.
 - Create and manage candidate profiles.
-- Upload and manage resumes.
 - Browse and search available job openings.
 - Apply for suitable positions.
 - Track application status.
@@ -112,7 +111,6 @@ The following tables are proposed for the application.
 | Recruiters | Stores recruiter and company information |
 | Jobs | Stores job descriptions, requirements, and employment details |
 | Applications | Tracks candidate applications and their statuses |
-| Resumes | Stores resume metadata and file references |
 | Interviews | Stores interview schedules and related details |
 | Departments | Maintains department information |
 
