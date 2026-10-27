@@ -239,14 +239,14 @@ Recommended test scenarios:
 - Implemented role-based access control for candidate, recruiter, and administrator workflows.
 - Tested API endpoints and application workflows using Swagger and Postman.
 
-*Include only the features you have implemented and verified. Add measurable results only when you have actual metrics.*
+
 
 ## 👩‍💻 Author
 
 **Your Name**
 
-- GitHub: Add your GitHub profile
-- LinkedIn: Add your LinkedIn profile
+- GitHub: @Archana-144
+
 
 ## 📄 License
 
